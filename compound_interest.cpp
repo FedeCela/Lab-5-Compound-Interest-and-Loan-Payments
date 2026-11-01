@@ -1,16 +1,53 @@
 
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
 
+int main() {
+    const int LABEL_WIDTH = 25;
 
-Ask the user how much money they are starting with (principal).
+    double principal;
+    double annual_rate;
+    double rate;
+    double amount;
+    double interest_earned;
+    int times_compounded;
 
-Ask for the annual interest rate (percentage).
+    cout << "Enter the principal balance: $";
+    cin >> principal;
 
-Ask how many times interest is compounded per year.
+    cout << "Enter the annual interest rate (%): ";
+    cin >> annual_rate;
 
-Convert the interest rate from a percentage into a decimal.
+    cout << "Enter the number of times interest is compounded per year: ";
+    cin >> times_compounded;
 
-Calculate the final savings amount.
+    rate = annual_rate / 100.0;
 
-Calculate how much interest was earned.
+    amount = principal * pow(1.0 + rate / times_compounded,
+                             times_compounded);
 
-Display all the results neatly.
+    interest_earned = amount - principal;
+
+    cout << fixed << setprecision(2);
+
+    cout << "\n--- Compound Interest Report ---\n";
+
+    cout << left << setw(LABEL_WIDTH) << "Annual interest rate:"
+         << right << annual_rate << "%\n";
+
+    cout << left << setw(LABEL_WIDTH) << "Times compounded:"
+         << right << times_compounded << "\n";
+
+    cout << left << setw(LABEL_WIDTH) << "Principal:"
+         << "$" << principal << "\n";
+
+    cout << left << setw(LABEL_WIDTH) << "Interest earned:"
+         << "$" << interest_earned << "\n";
+
+    cout << left << setw(LABEL_WIDTH) << "Amount in savings:"
+         << "$" << amount << "\n";
+
+    return 0;
+}
