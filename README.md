@@ -5,7 +5,7 @@
 
 My program will asks the user to enter the principal balance follow by the annual interest rate and number of times interest is compounded per year.
 
-The program will divide the interest rate by 100 to convert it into decimal form then, I will uses the `pow` function to calculate the final savings amount.
+The program will divide the interest rate by 100 to convert it into decimal form then, I will used the pow function to calculate the final savings amount.
 
 Then the program calculates the interest earned by subtracting the principal from the final amount.
 
@@ -14,7 +14,7 @@ The results displayed are the interest rate, number of compounding periods, prin
 # Program 2: loan payment
 my second code will ask the user to enter the loan amount, annual interest rate as a percentage, and number of monthly payments.
 
-Then the program will convert the annual interest rate from a percentage to a decimal and divide it by 12 to get the monthly interest rate. 
+Then the program will convert the annual interest rate from a percentage to a decimal and divide it by 100 and by 12 to get the monthly interest rate. 
 
 The program than will use the loan payment formula to calculate the monthly payment and store the result in a variable. 
 
@@ -46,7 +46,7 @@ Monthly payment:         $332.14
 Amount paid back:        $11957.15
 Interest paid:           $1957.15
 
-After running the code loan payment with the values of $539 loan amount, 81.10% annual interest rate and 5 for monthly payment, my result was
+After running the code loan payment with my values of $539 loan amount, 81.10% annual interest rate and 5 for monthly payment, my result was
 Loan amount:             $539.00
 Monthly interest rate:   6.76%
 Number of payments:      5
