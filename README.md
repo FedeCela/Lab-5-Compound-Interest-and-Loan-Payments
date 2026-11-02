@@ -24,7 +24,19 @@ Finally the program will display the loan information and the results with two d
 
 
 # Test Results
-After running the code Compound Interest withe the values of $1,000 principal, 4.25% annual interest, compounded 12 times per year I got the result of Interest earned: 4.33 and Amount in savings:104.33
+After running the code Compound Interest withe the values of $1,000 principal, 4.25% annual interest, compounded 12 times per year I got the result of
+Annual interest rate:    4.25%
+Times compounded:        12
+Principal:               $1000.00
+Interest earned:         $43.34
+Amount in savings:       $1043.34
+
+After running the code Compound Interest withe my  values of $1,000 principal, 5.96% annual interest, compounded 6 times per year I got the result of
+Annual interest rate:    5.96%
+Times compounded:        6
+Principal:               $1000.00
+Interest earned:         $61.10
+Amount in savings:       $1061.10
 
 After running the code loan payment with the values of $10000 loan amount, 12% annual interest rate and 36 for monthly payment my result was
 Monthly interest rate:   1.00%
@@ -32,6 +44,9 @@ Number of payments:      36
 Monthly payment:         $332.14
 Amount paid back:        $11957.15
 Interest paid:           $1957.15
+
+After running the code loan payment with the values of $10000 loan amount, 12% annual interest rate and 36 for monthly payment my result was
+
 
 [ ] Record the expected results: approximately $43.34 interest earned and $1,043.34 total.
 [ ] Run the compound interest program and record its actual results.
