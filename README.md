@@ -14,10 +14,20 @@ The results displayed are the interest rate, number of compounding periods, prin
 # Program 2: loan payment
 my second code will ask the user to enter the loan amount, annual interest rate as a percentage, and number of monthly payments.
 
+Then the program will convert the annual interest rate from a percentage to a decimal and divide it by 12 to get the monthly interest rate. 
+
+The program than will use the loan payment formula to calculate the monthly payment and store the result in a variable. 
+
+After that the program will calculate the total amount paid back and the total interest paid.
+
+Finally the program will display the loan information and the results with two decimal places so the money amounts are easy to read.
 
 
 # Test Results
-[ ] Include the assigned compound interest test: $1,000 principal, 4.25% annual interest, compounded 12 times per year.
+After running the code Compound Interest withe the values of $1,000 principal, 4.25% annual interest, compounded 12 times per year I got the result of Interest earned: 4.33 and Amount in savings:104.33
+
+after running the code loan payment with the values of 10000, 12%, 36 my 
+
 [ ] Record the expected results: approximately $43.34 interest earned and $1,043.34 total.
 [ ] Run the compound interest program and record its actual results.
 [ ] Include the assigned loan payment test: $10,000 loan, 12% annual interest, and 36 monthly payments.
