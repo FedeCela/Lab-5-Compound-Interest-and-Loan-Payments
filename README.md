@@ -39,39 +39,41 @@ Interest earned:         $61.10
 Amount in savings:       $1061.10
 
 After running the code loan payment with the values of $10000 loan amount, 12% annual interest rate and 36 for monthly payment my result was
+Loan amount:             $10000.00
 Monthly interest rate:   1.00%
 Number of payments:      36
 Monthly payment:         $332.14
 Amount paid back:        $11957.15
 Interest paid:           $1957.15
 
-After running the code loan payment with the values of $10000 loan amount, 12% annual interest rate and 36 for monthly payment my result was
+After running the code loan payment with the values of $539 loan amount, 81.10% annual interest rate and 5 for monthly payment, my result was
+Loan amount:             $539.00
+Monthly interest rate:   6.76%
+Number of payments:      5
+Monthly payment:         $130.61
+Amount paid back:        $653.04
+Interest paid:           $114.04
 
+# Why must a percentage be divided by 100 before using it in a formula?
+by dividing by 100 we change the result from a percentage to a decimal and that's what we are looking for in this monetary situation
 
-[ ] Record the expected results: approximately $43.34 interest earned and $1,043.34 total.
-[ ] Run the compound interest program and record its actual results.
-[ ] Include the assigned loan payment test: $10,000 loan, 12% annual interest, and 36 monthly payments.
-[ ] Record the expected results: approximately $332.14 monthly payment, $11,957.15 total paid back, and $1,957.15 interest.
-[ ] Run the loan payment program and record its actual results.
-[ ] Choose different input values for each program, calculate the expected results, run the programs, and record the actual results.
+# How does pow represent exponentiation?
+The pow function raises a number to a power. In C++, pow(base, exponent) raises the base number to the exponent. In my loan payment program, I use pow(1.0 + monthly_rate, number_of_payments) to calculate the interest factor over the total number of monthly payments.
 
-# Answer the Eight Questions
-[ ] Explain why the annual interest percentage must be converted to a decimal.
-[ ] Explain what the pow() function does.
-[ ] Explain how the number of compounding periods affects compound interest.
-[ ] Explain how to convert an annual interest rate into a monthly interest rate.
-[ ] Explain why double is used for financial calculations.
-[ ] Explain why you keep full precision during calculations and round only for display.
-[ ] Explain how the program calculates the amount paid back and the interest paid.
-[ ] Explain why calculations should be stored in variables before being displayed.
+# What does the number of compounding periods change in the savings formula?
+The number of compounding periods changes how often interest is added to the principal in the savings formula. When interest is compounded more frequently, interest is added more often, which can result in a higher final amount in savings.
+ 
+# How is an annual interest rate converted to a monthly rate?
+An annual interest rate is converted to a monthly rate by first dividing the percentage by 100 to convert it into a decimal, and then dividing it by 12 to get the monthly interest rate.
 
-# How to Compile and Run
-[ ] Explain how to compile compound_interest.cpp.
-[ ] Explain how to run the compound interest program.
-[ ] Explain how to compile loan_payment.cpp.
-[ ] Explain how to run the loan payment program.
+# Why should double be used for these calculations?
+The double data type should be used for these calculations because it can store decimal numbers. Interest rates, monthly payments, and interest amounts can include decimals, so using double helps make the calculations more accurate than using int that stores whole numbers.
 
-5. Final Check
-[ ] Save the file with the exact name README.md.
-[ ] Make sure all four required files are in the main level of your GitHub repository.
-[ ] Check spelling and make sure the explanations are written in your own words.
+# Why should calculations use full precision when money is displayed to two decimal places?
+like this you can have a more precise result to the hundreds decimal point which is equal to cents.
+
+# How are the amount paid back and total interest calculated?
+The total interest paid is calculated by subtracting the original loan amount from the amount paid back. These calculations show how much money is paid in total and how much of that money goes toward interest.
+
+# Why are calculations stored in variables before being displayed?
+calculations are store in variables because if they need to be use for a second calculation the answer of the first equation is done already and its easier to display in on the final result of the program.
